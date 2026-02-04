@@ -1247,8 +1247,8 @@ const useUserBotData = () => {
       referralCode: 'USER' + Math.random().toString(36).substr(2, 6).toUpperCase(),
       referralCount: 0,
       currentUser: null,
-      adminEmail: 'gattineniavinash4@gmail.com',
-      adminPassword: 'Sambasivarao@04'
+      adminEmail: import.meta.env.VITE_ADMIN_EMAIL || 'admin@userbothub.com',
+      adminPassword: import.meta.env.VITE_ADMIN_PASSWORD || 'changeme123'
     };
   });
 
@@ -1328,8 +1328,8 @@ const useUserBotData = () => {
       referralCode: 'USER' + Math.random().toString(36).substr(2, 6).toUpperCase(),
       referralCount: 0,
       currentUser: null,
-      adminEmail: 'gattineniavinash4@gmail.com',
-      adminPassword: 'Sambasivarao@04'
+      adminEmail: import.meta.env.VITE_ADMIN_EMAIL || 'admin@userbothub.com',
+      adminPassword: import.meta.env.VITE_ADMIN_PASSWORD || 'changeme123'
     };
     setData(freshData);
   };
